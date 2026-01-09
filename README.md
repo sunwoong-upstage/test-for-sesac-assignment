@@ -55,6 +55,43 @@ git checkout -b feature/your-name
 3. 커밋 및 푸시
 4. Pull Request 생성
 
+## 사용 예제
+
+### 기본 워크플로우
+
+```bash
+# 1. 저장소 클론
+git clone git@github.com:sunwoong-upstage/test-for-sesac-assignment.git
+cd test-for-sesac-assignment
+
+# 2. 작업 브랜치 생성
+git checkout -b feature/my-feature
+
+# 3. 파일 수정 후 커밋
+git add .
+git commit -m "feat: Add new feature"
+
+# 4. 원격 저장소에 푸시
+git push -u origin feature/my-feature
+```
+
+### 변경 이력 확인
+
+```bash
+# 커밋 히스토리 확인
+git log --oneline --graph --all
+
+# 브랜치 간 차이 확인
+git diff main..feature/sunwoong
+```
+
+## 변경 이력
+
+### 2024-01-09
+- README.md 초기 작성
+- 프로젝트 소개 및 기본 문서화
+- Git 워크플로우 예제 추가
+
 ## 라이선스
 
 이 프로젝트는 학습 목적으로 사용됩니다.
